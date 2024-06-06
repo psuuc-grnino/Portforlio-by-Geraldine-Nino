@@ -19,78 +19,6 @@
 
 </head>
 <style>
-
-.centerItem{
-  display: flex !important;            /*center text in grid item*/
-  align-items: center !important;      /*center text in grid item*/
-  justify-content: center !important;  /*center text in grid item*/ 
-}
-
-
-
-.gallery{
-  grid-area: c;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  grid-auto-rows: 200px;
-  grid-gap: 20px;
-  grid-auto-flow: dense;
-  overflow: auto;
-  padding-right: 20px;  
-}
-
-.gallery>div{
-  z-index: 1;
-  position: relative;
-  padding: 0;
-  overflow: hidden;
-  box-shadow: 5px 5px 10px rgba(0,0,0,.2), 
-              5px 5px 25px rgba(0,0,0,.1);
-  transition: all .3s ease-in-out;
-}
-.gallery div img{
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  overflow: hidden;
-  transition: all .6s ease-in-out;
-}
-.gallery>div, .gallery div img{
-/*   transition: all .6s ease-in-out; */
-}
-/*make bIG*/
-.gallery>div:hover, .gallery>div:hover img{
-  transform: scale(1.05);
-}
-.gallery>div:hover img{
-/*   transform: scale(1.06); */
-}
-.card{
-  padding: 0 !important;
-  width: 100%;
-  height: 50%;
-  bottom: -50%;
-  padding: 1em !important;
-  box-sizing: border-box;
-  background: rgba(255,255,255,.5);
-  border-top-right-radius: 0 !important;
-  border-top-left-radius: 0 !important;
-/*   transform: rotate(-90deg) translateX(-100%); */
-/*   transform-origin: 0% 0%; */
-}
-.vertical{
-  grid-row: span 2;
-}
-.horizontal{
-  grid-column: span 2;
-}
-.big{
-  grid-row: span 2;
-  grid-column: span 2;
-}
-
 .post-background {
     background-image: url('photos/backstyle.png'); 
     background-size: cover; 
@@ -142,43 +70,115 @@
           <p class="lead my-2" style="font-size: small;">My work focuses on blending artistic elements and design principles, ensuring that every <br> project not only looks great but also offers a quality of work. </p>
         </div>
         <header class="d-flex flex-wrap align-items-center justify-content-center  py-3  border-bottom">
-            <a href="#" style="text-decoration: underline; color: #650000;" class="nav-link px-2">Gallery</a>
-            <a href="pdf.html" class="nav-link px-2">PDFs</a>   
+            <a href="works.html" class="nav-link px-2">Gallery</a>
+            <a href="#" style="text-decoration: underline; color: #650000;" class="nav-link px-2">PDFs</a>       
             <a href="https://www.raket.ph/fashionista.findzzz/" class="nav-link px-2">Products</a>        
-        </header>
+          </header>
       </div>
 
-      <article>
-        <div class="gallery" style="padding: 10px;">
-            <div class="horizontal"><img src="photos/artworks/art7.png" alt="1"></div>
-            <div class="vertical"><img src="photos/artworks/art1.jpg" alt="2"></div>
-            <div class="horizontal"><img src="photos/artworks/art9.jpg" alt="3"></div>
-            <div class="big"><img src="photos/artworks/art6.jpg" alt="4"></div>
-            <div class="vertical"><img src="photos/artworks/art2.jpg" alt="5"></div>
-            <div><img src="photos/artworks/art3.jpg" alt="6"></div>
-            <div class="vertical"><img src="photos/artworks/art5.jpg" alt="7"></div>
-            <div><img src="photos/artworks/art16.jpeg" alt="8"></div>
-            <div><img src="photos/artworks/art13.jpeg" alt="8.1"></div>
-            <div><img src="photos/artworks/art18.jpg" alt="9"></div>
-            <div class="big"><img src="photos/artworks/art4.jpg" alt="10"></div>
-            <div><img src="photos/artworks/art12.jpeg" alt="11"></div>
-            <div class="horizontal"><img src="photos/artworks/art10.png" alt="12"></div>
-            <div><img src="photos/artworks/art19.png" alt="12.1"></div>
-            <div class="vertical"><img src="photos/artworks/art20.png" alt="13"></div>
-            <div><img src="photos/artworks/art11.jpg" alt="14"></div>
-            <div class="vertical"><img src="photos/artworks/art21.jpg" alt="15"></div>
-            <div class="big"><img src="photos/artworks/art22.jpg" alt="16"></div>
-            <div><img src="photos/artworks/art14.jpeg" alt="17"></div>
-            <div class="horizontal"><img src="photos/artworks/art23.jpg" alt="18"></div>
-            <div class="horizontal"><img src="photos/artworks/art17.jpeg" alt="19"></div>
-            <div class="big"><img src="photos/artworks/art26.jpg" alt="20"></div>
-            <div><img src="photos/artworks/art25.png" alt="21"></div>
-            <div class="vertical"><img src="photos/artworks/art27.jpg" alt="23"></div>
-            <div class="horizontal"><img src="photos/artworks/art8.png" alt="18"></div>
-            <div><img src="photos/artworks/art24.png" alt="22"></div>
-            <div><img src="photos/artworks/art29.jpg" alt="23"></div>
+  <div class="album py-5">
+    <div class="container">
+
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="photos/pdf-cover/plantionary.png" height="225" alt="" width="100%">
+            <div class="card-body">
+              <h2>Plantionary</h2>
+              <p><small>UX/UI Design</small></p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="https://www.canva.com/design/DAGHIOtf3Mo/xeQsyLOm2ORbu1ayAVQRCw/view?utm_content=DAGHIOtf3Mo&utm_campaign=designshare&utm_medium=link&utm_source=editor"><button type="button" class="btn btn-sm btn-outline-secondary">Visit</button></a>
+                </div>
+                <!-- <a href="" style="text-decoration: none;"><small class="text-body-secondary">⭐No ratings yet</small></a> -->
+              </div>
+            </div>
           </div>
-      </article>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="photos/pdf-cover/wed-inv.png" height="225" alt="" width="100%">
+            <div class="card-body">
+              <h2>Wedding Invitations</h2>
+              <p><small>Templates</small></p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="https://www.canva.com/design/DAGFGBja-nA/pn9wcnYvJKV3afiWZ3Y6nA/view?utm_content=DAGFGBja-nA&utm_campaign=designshare&utm_medium=link&utm_source=editor"><button type="button" class="btn btn-sm btn-outline-secondary">Visit</button></a>
+                </div>
+                <!-- <small class="text-body-secondary">⭐328 reviews</small> -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="photos/pdf-cover/landing-page.png" alt="" width="100%" height="225"role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em"></text>
+            <div class="card-body">
+              <h2>Landing Page</h2>
+              <p><small>Website UX/UI Design</small></p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="https://www.canva.com/design/DAGHO52OLf4/ce8Ga8Gs8yWwx1dMzd4OmQ/view?utm_content=DAGHO52OLf4&utm_campaign=designshare&utm_medium=link&utm_source=editor"><button type="button" class="btn btn-sm btn-outline-secondary">Visit</button></a>
+                </div>
+                <!-- <small class="text-body-secondary">⭐541 reviews</small> -->
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="photos/pdf-cover/vlog-animated.png" alt="" width="100%" height="225"role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em"></text>
+            <div class="card-body">
+              <h2>Vlog Animated Covers</h2>
+              <p><small>Animation Templates</small></p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="https://www.canva.com/design/DAGHH6Ce48g/CbFdFksOgkN0T0M7YHYzzA/watch?utm_content=DAGHH6Ce48g&utm_campaign=designshare&utm_medium=link&utm_source=editor"><button type="button" class="btn btn-sm btn-outline-secondary">Visit</button></a>
+                </div>
+                <!-- <small class="text-body-secondary">⭐765 reviews</small> -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="photos/pdf-cover/flyer-temp.png" alt="" width="100%" height="225"role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em"></text>
+            <div class="card-body">
+              <h2>Flyers</h2>
+              <p><small>Canva Templates</small></p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="https://www.canva.com/design/DAGFieig06o/Mp65EHKvB2vygZsn7DGqGg/view?utm_content=DAGFieig06o&utm_campaign=designshare&utm_medium=link&utm_source=editor"><button type="button" class="btn btn-sm btn-outline-secondary">Visit</button></a>
+                </div>
+                <!-- <small class="text-body-secondary">⭐346 reviews</small> -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="photos/pdf-cover/illustrations.png" alt="" width="100%" height="225"role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em"></text>
+            <div class="card-body">
+              <h2>Illustrations</h2>
+              <p><small>Digital Arts</small></p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="https://www.canva.com/design/DAGHU5wShdU/aJchW0BzSXIUjoLO7Kza0Q/view?utm_content=DAGHU5wShdU&utm_campaign=designshare&utm_medium=link&utm_source=editor"><button type="button" class="btn btn-sm btn-outline-secondary">Visit</button></a>
+                </div>
+                <!-- <small class="text-body-secondary">⭐434 reviews</small> -->
+              </div>
+            </div>
+          </div>
+        </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+      
 
       
    
